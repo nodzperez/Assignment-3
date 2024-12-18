@@ -12,7 +12,6 @@ export const NavBar = () => {
                 <Menu.Item as={Link} to="/auth" style={{ fontSize: "1.5rem" }}> Auth </Menu.Item>
             </Menu.Menu>
 
-
         </Menu>
     );
 };
