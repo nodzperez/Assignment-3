@@ -1,6 +1,6 @@
 export const fetchTvShowDetails = async (tvShowId: string) => {
   const response = await fetch(
-    `https://api.themoviedb.org/3/tv/${tvShowId}?language=en-US&page=1`,
+    `https://api.themoviedb.org/3/tv/${tvShowId}?language=en-US`,
     {
       headers: {
         Authorization:
