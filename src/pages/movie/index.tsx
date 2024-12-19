@@ -1,6 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
-import { Segment, Header, Loader, Grid, Image, List } from "semantic-ui-react";
+import {
+  Segment,
+  Header,
+  Loader,
+  Grid,
+  Image,
+  List,
+  Label,
+} from "semantic-ui-react";
 import { fetchMovieDetails } from "./query";
 
 export const Movie = () => {
@@ -54,7 +62,7 @@ export const Movie = () => {
                 <List.Item>
                   <List.Header>Genres: </List.Header>
                   {data.genres.map((genre: any) => (
-                    <List.Item key={genre.id}> {genre.name} </List.Item>
+                    <Label key={genre.id}> {genre.name} </Label>
                   ))}
                 </List.Item>{" "}
                 <List.Item>
