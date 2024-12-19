@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Popular Movie/TV Show Rating App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is a popular movie and TV show rating app where users can discover trending films and series, view detailed information, and rate their favorites. Users can navigate through various pages to see currently popular titles, rate them, and even revisit what they’ve rated in the past. The app provides an engaging and interactive way to keep track of shows and movies you’ve enjoyed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Responsive Design:** Works smoothly across desktop and mobile devices.
+- **Popular Movies and TV Shows:** Browse through trending titles fetched dynamically from an API.
+- **Detailed Information:** View overviews, release dates, and rating details.
+- **Rating Functionality:** Rate movies and TV shows as a guest user without signing up.
+- **User-Friendly Layout:** Intuitive navigation with a clean and modern UI.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React** (with React Router for navigation)
+- **React Query** (for data fetching and caching)
+- **Semantic UI React** (for styling and layout)
+- **TMDB API** (for movies and TV shows data)
+- **JavaScript / TypeScript**
+- **Vite** (for development)
+- **Google Fonts & Custom Favicon**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Setup
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository.
+2. Install dependencies using `npm install` or `yarn`.
+3. Run `npm run dev` or `yarn dev` to start the development server.
+4. Open `http://localhost:5173` in your web browser.
+5. Explore popular titles, rate them, and enjoy discovering new shows and movies!
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Usage
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This project demonstrates how to integrate an external API (TMDB) into a React application, manage state and data fetching with React Query, and provide an interactive interface for browsing and rating popular media. It’s a great reference for learning about React components, routing, data fetching, and UI component libraries.
+
+## Credits
+
+- **TMDB API** - For movie and TV show data
+- **React Query**
+- **Semantic UI React**
+- **Google Fonts**
+- **Custom Icons**
+- **ChatGPT** - For guidance and assistance
+
+## License
+
+This project is for educational purposes. You are free to study, learn from, and modify the code as needed.
